@@ -1,0 +1,38 @@
+@use 'sass:math';
+// Миксины
+@import 'mixins.scss';
+
+// Шрифты
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+// Переменные
+@import 'vars.scss';
+
+// Обнуление =============
+@import 'reset.scss';
+
+// Базовые стили
+@import 'base.scss';
+
+// Header
+@import 'header.scss';
+
+// Intro
+@import 'intro.scss';
+
+// Footer
+@import 'footer.scss';
+
+button {
+	background-color: transparent;
+}
+body {
+	color: #000;
+	font-family: 'Montserrat', sans-serif;
+}
+
+._container {
+	max-width: $maxWidthContainer + px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
